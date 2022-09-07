@@ -1,0 +1,2 @@
+# NFDI4IngHPCWorkflows
+Within the NFDI4Ing project strategies to publish research data (which includes software and workflows) in a Findable, Accessible, Interoperable and Reusable (FAIR) manner are being developed. For HPC simulations one challenge is the often unique software stack. In this repository, we would like to investigate how (docker, apptainer) containers can be build in order to improve the FAIRness of workflows in the HPC context.
