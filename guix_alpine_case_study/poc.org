@@ -1,0 +1,185 @@
+* OpenMPI in containers
+
+** OpenMPI overview
+
+- [[https://www.open-mpi.org][OpenMPI]] is C/C++ API to coordinate operating system processes across
+  boundaries via message passing:
+  - Threads
+  - Cores
+  - Nodes
+- Works on many "platforms", SLURM being one of them
+- Focus is on latency and bandwidth performance:
+  - Can use various technologies for data exchange: ~/dev/shm~, Infiniband, etc.
+
+** MPI and SLURM
+
+- Overlap in functionality:
+  - SLURM both allocates and executes workloads
+  - MPI focuses on executing workloads
+- OpenMPI [[https://www.open-mpi.org/faq/?category=slurm#slurm-run-jobs][recommends]] to use SLURM for resource allocation:
+
+  #+begin_src sh
+  $ salloc -N 4 mpirun my_mpi_aplication
+  #+end_src
+
+- ~salloc~ will allocate 4 nodes in the SLURM cluster and invokes ~mpirun~
+- ~mpirun~ will use the allocation via ~srun~ 
+
+** Container
+
+- Container use linux namespaces to isolate instances of various kernel
+  subsystems from each other.
+  - Presumably, the most common use-case for containers is to execute
+    the user-level software stack from an operating system on another
+    hosting operating system.
+  - This is done to side-step ABI compatability issues between 
+    software stacks.
+- In the following a simple container based on [[https://github.com/containers/bubblewrap][bubblewrap]] is used:
+  - Run an [[https://alpinelinux.org/][Alpine linux]] software stack on top of a [[https://guix.gnu.org/][Guix]] host system.
+- Example container invocation (binds ~rootfs~ as new ~/~ inside the
+  container):
+
+  #+begin_src sh
+  bwrap --bind rootfs / --proc /proc --dev /dev --tmpfs /tmp -- command
+  #+end_src
+
+** SLURM, MPI and container problems
+
+- MPI needs to interact with SLURM (to launch the user application) as well as
+  with instances of the user application (to exchange messages between them).
+  - This hard dependency between the components typically requires are
+    recompilation of the user applications in each SLURM/MPI (e.g. HPC)
+    environment.
+- Containers usually consist of a self-contained user-space software stack,
+  that is executable by a wide range of linux kernels (and thereby operating
+  systems) of the same architecture.
+  - Ideally a container image should also work in many environments, including
+    HPC.
+  - Creating container images specifically for each HPC environment kind of
+    defeats a major selling point of containers.
+
+** MPI and container launch modes
+
+- There seem to be two launch options for MPI container application:
+  *host* and *guest* based.
+- Host launches:
+  - The MPI installation on the host launches the container runtime which
+    launches the user application in turn.
+  - This requires MPI versions on host and container to match (at least
+    partially) and breaks the universiality of containers. See this [[https://github.com/hpc/charliecloud/issues/1010][discussion]]
+    for more information.
+- Guest launches:
+  - The container runtime launches the MPI installation of the container (the
+    guest) which launches the user application.
+  - Only software from inside the container is used and no version conflicts
+    arise.
+  - However, the container MPI installation has no access to the SLURM
+    installation and cannot launch processes on HPC nodes.
+- In the following, a proof of concept hack is presented which implements proxy
+  access to the hosting SLURM for a guest launched MPI installation.
+
+** Proof of concept hack
+
+- To start the user application in a container, the applications command is
+  usually prefixed with the container runtime configuration (as shown above)
+  - This includes the OpenMPI launch.
+- OpenMPI seems to be using a process interface to interact with SLURM
+  - E.g. it calls ~srun~ to spawn instances of itself
+  - Since the host environment including SLURM is not visible in the guest,
+    ~srun~ is not accessible.
+- However, it should be possible to forward these command invocations via
+  sockets or similar to the host environment
+  - Additionally, the prefix for the container runtime configuration has to
+    prepended to the forwarded command.
+
+** Example ~mpirun~ invocation
+
+- The proof of concept consists of two parts:
+  - A shell script ~container~, which starts a unix socket server in the
+    background listening for shell commands to execute in the host environment.
+  - A shim ~srun~ shell script inside the guest, which submits ~srun~ calls from
+    OpenMPI via the unix socket server into the host environment.
+- Usage would look like the following:
+  - Start unix socket server and define ~MYCONTAINER~ variable containing the
+    container runtime configuration for convenience:
+
+    #+begin_src sh
+    source container
+    #+end_src
+
+  - Use ~mpirun~ with container variable as prefix:
+
+    #+begin_src sh
+    salloc -n2 -- $MYCONTAINER mpirun /root/hello
+    salloc: Granted job allocation 3
+    Hello world from rank 0 of 2 on node-a in communicator MPI_COMM_WORLD.
+    Hello world from rank 1 of 2 on node-b in communicator MPI_COMM_WORLD.
+    salloc: Relinquishing job allocation 3
+    salloc: Job allocation 3 has been revoked.
+    #+end_src
+
+** Container <-> Host communication
+
+- An interface to the hosting environment is necessary.
+- For example, a shell in the hosting environment can be exposed via
+  ~socat~ and a unix socket:
+
+  #+begin_src sh
+  socat unix-listen:/tmp/bash.sock,fork exec:bash,stderr
+  #+end_src
+
+- ~srun~ in the container is a simple script:
+
+  #+begin_src sh
+  #!/bin/sh
+  echo srun --jobid=$SLURM_JOB_ID ${@//orted/${MYCONTAINER} orted} \; exit | \
+      socat -,ignoreeof unix:/host/bash.sock
+  #+end_src
+
+- Forwards ~mpirun~ invocation ~srun~ to the host environment.
+- Some information from the ~salloc~ environment also needs to be forwarded,
+  here ~SLURM_JOB_ID~ is forwarded manually.
+
+** Caveats
+
+- Environment variables may leak container or host local information like
+  directories.
+- Probably only works in very simple MPI scenarios:
+  - For example, it's assumed ~mpirun~ will always start ~orted~ daemon.
+- No access to host devices in ~/dev~, using host devices will lead to
+  permission issues.
+
+** Alternatives
+
+- Avoid MPI and follow the [[https://slurm.schedmd.com/containers.html][SLURM container guide]]
+- Use more sophisticated tools like perhaps ~ch-run~ from [[https://github.com/hpc/charliecloud][charliecloud]]
+- Perhaps SLURM container tools like [[https://slurm.schedmd.com/CNCF22/CNCF_RUG_20221005.pdf][~scrun~]] will gain MPI support
+
+** Source: ~container~
+
+#+begin_src sh
+#!/bin/sh
+socat unix-listen:/tmp/bash.sock,fork exec:bash,stderr &
+BASH_SERVER=$!
+export MYCONTAINER="bwrap --bind /mnt/rootfs / --proc /proc --dev /dev --bind /tmp /host --tmpfs /tmp -- /usr/bin/env PATH=/bin:/usr/bin"
+bash
+kill $(jobs -p) && wait $(jobs -p)
+#+end_src
+
+** Source: Container ~srun~
+
+#+begin_src sh
+#!/bin/sh
+echo srun --jobid=$SLURM_JOB_ID ${@//orted/${MYCONTAINER} orted} \; exit | \
+    socat -,ignoreeof unix:/host/bash.sock
+#+end_src
+
+** OpenMPI introspection
+
+- OpenMPI consists of many plugins or modules via the so called mca
+  (Modular Component Architecture).
+- Plugin variables can be configured with ~-mca~ command-line option.
+  - ~ompi_info -a~ lists all options.
+- The ~plm~ module interaction with SLURM can be logged with the
+  ~-mca plm_base_verbose 9~ option.
+  

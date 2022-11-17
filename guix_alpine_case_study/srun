@@ -1,0 +1,3 @@
+#!/bin/sh
+echo srun --jobid=$SLURM_JOB_ID ${@//orted/${MYCONTAINER} orted} \; exit | \
+    socat -,ignoreeof unix:/host/bash.sock
