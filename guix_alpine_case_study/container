@@ -1,0 +1,6 @@
+socat unix-listen:/tmp/bash.sock,fork exec:bash,stderr &
+BASH_SERVER=$!
+export MYCONTAINER="bwrap --bind /mnt/rootfs / --proc /proc --dev /dev --bind /tmp /host --tmpfs /tmp -- /usr/bin/env PATH=/bin:/usr/bin"
+bash
+kill $BASH_SERVER
+wait $BASH_SERVER
