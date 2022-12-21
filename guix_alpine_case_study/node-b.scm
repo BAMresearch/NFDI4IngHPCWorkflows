@@ -49,4 +49,4 @@
               (slurmd-configuration (conf-server "controller"))))
     %base-services))
 
-  (packages (cons* socat bubblewrap openmpi %base-packages)))
+  (packages (cons* socat bubblewrap %base-packages)))

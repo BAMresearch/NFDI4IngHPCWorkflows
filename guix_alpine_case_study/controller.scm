@@ -61,4 +61,4 @@
               (slurm-configuration (host "controller"))))
     %base-services))
 
-  (packages (cons* socat bubblewrap openmpi %base-packages)))
+  (packages (cons* socat bubblewrap %base-packages)))
