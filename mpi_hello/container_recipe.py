@@ -50,10 +50,10 @@ if __name__ == "__main__":
     # stage += hpccm.primitives.raw(docker="EXPOSE 8888")
 
     # ### MPI Hello World
-    stage += hpccm.primitives.copy(src="hello.c", dest="/home/hello.c")
+    stage += hpccm.primitives.copy(src="mpitest.c", dest="/home/mpitest.c")
     stage += hpccm.primitives.shell(
         commands=[
-            "mpicc -std=c99 -g -O3 /home/hello.c -o /usr/local/bin/hello.exe -lm",
+            "mpicc -std=c99 -g -O3 /home/mpitest.c -o /usr/local/bin/mpitest.exe -lm",
         ]
     )
 
