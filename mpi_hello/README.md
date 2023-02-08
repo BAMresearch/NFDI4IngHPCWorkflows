@@ -52,15 +52,68 @@ I haven't tested with podman yet (22.03.2022, 14:46).
 #TODO: 1. use apptainer definition files (host/bind model)
 #TODO: 2. if 1. works, use hpccm to generate definition files more easily
 
-## Tests
+### Tests
 In the HPC environment [Apptainer](https://apptainer.org) seems promising,
 to be able to run containers as one would run a MPI application.
 ```sh
 $: srun -t 00:05:00 -N $(NNODES) -n $(NPROCS) mpirun apptainer exec ./mpi_hello.sif hello.exe
 ```
 
-### Single node execution
+#### Single node execution
 #TODO: report results for host/bind model
 
-### Multiple node execution
+#### Multiple node execution
 #TODO: report results for host/bind model
+
+## Conda environments
+Besides container technology, one may also use [conda](https://docs.conda.io/en/latest/) to
+create the compute environment (for local development).
+With [conda-pack](https://conda.github.io/conda-pack/) *conda environments* can be archived and installed on other
+systems and locations.
+
+### Tests
+To test the capabilities of `conda-pack` we use again the above hello world program `mpitest.c`.
+For use in an HPC environment, the most important question is how to deal with
+MPI (implementation, version) such that the environment/application is still operable.
+Therefore, different variants are tested.
+The specification files for the different environments can be found under `cenvs`.
+The environments target the HPC system (host) available for testing purposes with the
+following libraries/compilers available:
+
+* openmpi version 4.1.2
+* gcc version 12.2.0
+* (optional) make version 4.3
+
+#### Variant 1
+conda environment contains same MPI implementation (openmpi, mpich) and version as host.
+
+Steps:
+1. (local linux workstation): create environment
+```sh
+$ mamba env create -n <env-name> -f cenvs/variant_1.yaml -p PREFIX
+```
+2. (local linux workstation): use `conda-pack` to create archive
+```sh
+$ mamba install -c conda-forge conda-pack
+$ conda pack -n <env-name> -o archive.tar.gz
+```
+3. transfer the archive to the target machine (i.e. `scp ...`)
+4. (on target machine): unpack environment
+```sh
+$ mkdir -p my_env
+$ tar -xzf archive.tar.gz -C my_env
+# Activate the environment
+$ source my_env/bin/activate
+# Cleanup prefixes
+(my_env) $ conda-unpack
+# Everything should work
+# Deactivate once you are done
+(my_env) $ source my_env/bin/deactivate
+```
+The job is then defined in `mpijob_v1.sh` and submitted via
+```sh
+sbatch mpijob_v1.sh
+```
+
+#### Variant 2
+conda environment contains different MPI implementation than host. (negative test)
