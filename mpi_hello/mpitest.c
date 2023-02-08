@@ -1,6 +1,7 @@
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main (int argc, char **argv) {
         int rc;
@@ -25,7 +26,10 @@ int main (int argc, char **argv) {
                 goto exit_with_error;
         }
 
-        fprintf (stdout, "Hello, I am rank %d/%d\n", myrank, size);
+        char hostname[256];
+        gethostname(&hostname[0], 256);
+
+        fprintf (stdout, "Hello, I am rank %d/%d on %s\n", myrank, size, hostname);
 
         MPI_Finalize();
 
