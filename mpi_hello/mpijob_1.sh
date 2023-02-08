@@ -19,4 +19,4 @@ source ./env_v1/bin/activate
 conda-unpack
 
 mpicc -o mpitest.exe mpitest.c
-mpiexec -np 4 ./mpitest.exe
+mpirun ./mpitest.exe
