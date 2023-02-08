@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=mpitest_conda_v1
+#SBATCH --job-name=mpitest_conda_v2
 #SBATCH --time=00:01:00
 #SBATCH --nodes=2
 #SBATCH --ntasks-per-node=3
@@ -15,7 +15,7 @@
 
 module purge
 
-source ./env_v1/bin/activate
+source ./env_v2/bin/activate
 conda-unpack
 
 echo "+ which mpicc"
