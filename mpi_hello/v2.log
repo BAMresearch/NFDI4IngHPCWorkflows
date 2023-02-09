@@ -1,0 +1,756 @@
+execve("/home/pdiercks/mpitest_conda/env_v2/bin/mpirun", ["mpirun", "./mpitest.exe"], 0x7ffcdc0c8348 /* 81 vars */) = 0
+brk(NULL)                               = 0x55ae8eea8000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65e1000
+readlink("/proc/self/exe", "/home/pdiercks/mpitest_conda/env"..., 4096) = 53
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/tls/x86_64", 0x7ffe51258170) = -1 ENOENT (No such file or directory)
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/tls", 0x7ffe51258170) = -1 ENOENT (No such file or directory)
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/x86_64", 0x7ffe51258170) = -1 ENOENT (No such file or directory)
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/../lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=61571, ...}) = 0
+mmap(NULL, 61571, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa7b65d1000
+close(3)                                = 0
+open("/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0PS\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1136944, ...}) = 0
+mmap(NULL, 3150136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7b60bf000
+mprotect(0x7fa7b61c0000, 2093056, PROT_NONE) = 0
+mmap(0x7fa7b63bf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x100000) = 0x7fa7b63bf000
+close(3)                                = 0
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200m\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=142144, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65d0000
+mmap(NULL, 2208904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7b5ea3000
+mprotect(0x7fa7b5eba000, 2093056, PROT_NONE) = 0
+mmap(0x7fa7b60b9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fa7b60b9000
+mmap(0x7fa7b60bb000, 13448, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa7b60bb000
+close(3)                                = 0
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`&\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2156592, ...}) = 0
+mmap(NULL, 3985920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7b5ad5000
+mprotect(0x7fa7b5c99000, 2093056, PROT_NONE) = 0
+mmap(0x7fa7b5e98000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c3000) = 0x7fa7b5e98000
+mmap(0x7fa7b5e9e000, 16896, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa7b5e9e000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65cf000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65cd000
+arch_prctl(ARCH_SET_FS, 0x7fa7b65cd740) = 0
+access("/etc/sysconfig/strcasecmp-nonascii", F_OK) = -1 ENOENT (No such file or directory)
+access("/etc/sysconfig/strcasecmp-nonascii", F_OK) = -1 ENOENT (No such file or directory)
+mprotect(0x7fa7b5e98000, 16384, PROT_READ) = 0
+mprotect(0x7fa7b60b9000, 4096, PROT_READ) = 0
+mprotect(0x7fa7b63bf000, 4096, PROT_READ) = 0
+access("/etc/sysconfig/strcasecmp-nonascii", F_OK) = -1 ENOENT (No such file or directory)
+access("/etc/sysconfig/strcasecmp-nonascii", F_OK) = -1 ENOENT (No such file or directory)
+stat("/etc/sysconfig/64bit_strstr_via_64bit_strstr_sse2_unaligned", 0x7ffe51258700) = -1 ENOENT (No such file or directory)
+mprotect(0x55ae8cf8d000, 4096, PROT_READ) = 0
+mprotect(0x7fa7b65e2000, 4096, PROT_READ) = 0
+munmap(0x7fa7b65d1000, 61571)           = 0
+set_tid_address(0x7fa7b65cda10)         = 1922
+set_robust_list(0x7fa7b65cda20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7fa7b5ea9860, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7fa7b5ea98f0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x55ae8eea8000
+brk(0x55ae8eec9000)                     = 0x55ae8eec9000
+brk(NULL)                               = 0x55ae8eec9000
+uname({sysname="Linux", nodename="sv2007", ...}) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55ae8cef8a20, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x55ae8cef8a20, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x55ae8cef8a20, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0x55ae8cef8a20, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x55ae8cef8a20, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+open("/home/pdiercks/.mpiexec.hydra.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/pdiercks/mpitest_conda/env_v2/etc/mpiexec.hydra.conf", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/mpirun", {st_mode=S_IFREG|0755, st_size=2390128, ...}) = 0
+getcwd("/home/pdiercks/mpitest_conda", 4096) = 29
+stat("/home/pdiercks/mpitest_conda", {st_mode=S_IFDIR|0755, st_size=170, ...}) = 0
+stat("/home/pdiercks/mpitest_conda", {st_mode=S_IFDIR|0755, st_size=170, ...}) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=0x55ae8cf23cd0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+read(0, NULL, 0)                        = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=0x55ae8cf23cd0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fa7b5eb2630}, NULL, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 1 ([{fd=0, revents=POLLIN}])
+uname({sysname="Linux", nodename="sv2007", ...}) = 0
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=61, ...}) = 0
+open("/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=9, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65df000
+read(3, "multi on\n", 8192)             = 9
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+munmap(0x7fa7b65df000, 8192)            = 0
+futex(0x7fa7b5ea09f0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=61, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65df000
+read(3, "nameserver 192.168.20.200\nsearch"..., 8192) = 61
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+munmap(0x7fa7b65df000, 8192)            = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1745, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65df000
+read(3, "#\n# /etc/nsswitch.conf\n#\n# An ex"..., 8192) = 1745
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+munmap(0x7fa7b65df000, 8192)            = 0
+open("/home/pdiercks/mpitest_conda/env_v2/bin/../lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=61571, ...}) = 0
+mmap(NULL, 61571, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa7b65d1000
+close(3)                                = 0
+open("/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260!\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=61560, ...}) = 0
+mmap(NULL, 2173048, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa7b58c2000
+mprotect(0x7fa7b58ce000, 2093056, PROT_NONE) = 0
+mmap(0x7fa7b5acd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fa7b5acd000
+mmap(0x7fa7b5acf000, 22648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa7b5acf000
+close(3)                                = 0
+access("/etc/sysconfig/strcasecmp-nonascii", F_OK) = -1 ENOENT (No such file or directory)
+mprotect(0x7fa7b5acd000, 4096, PROT_READ) = 0
+munmap(0x7fa7b65d1000, 61571)           = 0
+open("/etc/hosts", O_RDONLY|O_CLOEXEC)  = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=627, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b65df000
+read(3, "127.0.0.1   localhost localhost."..., 8192) = 627
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+munmap(0x7fa7b65df000, 8192)            = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=1922, nl_groups=00000000}, [12]) = 0
+sendto(3, {{len=20, type=RTM_GETLINK, flags=NLM_F_REQUEST|NLM_F_DUMP, seq=1675935388, pid=0}, {ifi_family=AF_UNSPEC, ...}}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1240, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_LOOPBACK, ifi_index=if_nametoindex("lo"), ifi_flags=IFF_UP|IFF_LOOPBACK|IFF_RUNNING|IFF_LOWER_UP, ifi_change=0}, [{{nla_len=7, nla_type=IFLA_IFNAME}, "lo"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 0}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 65536}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 1}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 1}, {{nla_len=5, nla_type=IFLA_CARRIER}, 1}, {{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x00\x00\x00\x00\x00\x00"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\x00\x00\x00\x00\x00\x00"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=42087, tx_packets=42087, rx_bytes=8666474, tx_bytes=8666474, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=42087, tx_packets=42087, rx_bytes=8666474, tx_bytes=8666474, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 0, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 1, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 1, [IPV4_DEVCONF_NOPOLICY-1] = 1, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_READY}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4477, reachable_time=38165, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 65536, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = -1, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = -1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, {{len=1336, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_SLAVE|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth0"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 6}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 64}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 64}, {{nla_len=8, nla_type=IFLA_MASTER}, 4}, {{nla_len=5, nla_type=IFLA_CARRIER}, 1}, {{nla_len=7, nla_type=IFLA_QDISC}, "mq"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 2}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x90\xe2\xba\x2c\xaf\xfc"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=203118459, tx_packets=16997226, rx_bytes=292853813797, tx_bytes=4409565809, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=29464, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=203118459, tx_packets=16997226, rx_bytes=796037669, tx_bytes=114598513, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=29464, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=88, nla_type=IFLA_LINKINFO}, [{{nla_len=9, nla_type=IFLA_INFO_SLAVE_KIND}, "bond"}, {{nla_len=72, nla_type=IFLA_INFO_SLAVE_DATA}, "\x05\x00\x01\x00\x00\x00\x00\x00\x05\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x00\x00\x00\x00\x0a\x00\x04\x00\x90\xe2\xba\x2c"...}]}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=457, reachable_time=16571, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2576
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1336, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth1"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_SLAVE|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth1"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 6}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 64}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 64}, {{nla_len=8, nla_type=IFLA_MASTER}, 4}, {{nla_len=5, nla_type=IFLA_CARRIER}, 1}, {{nla_len=7, nla_type=IFLA_QDISC}, "mq"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 12}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x90\xe2\xba\x2c\xaf\xfc"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=24527, tx_packets=22124, rx_bytes=2882490, tx_bytes=2740752, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=22016, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=24527, tx_packets=22124, rx_bytes=2882490, tx_bytes=2740752, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=22016, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=88, nla_type=IFLA_LINKINFO}, [{{nla_len=9, nla_type=IFLA_INFO_SLAVE_KIND}, "bond"}, {{nla_len=72, nla_type=IFLA_INFO_SLAVE_DATA}, "\x05\x00\x01\x00\x00\x00\x00\x00\x05\x00\x02\x00\x00\x00\x00\x00\x08\x00\x03\x00\x06\x00\x00\x00\x0a\x00\x04\x00\x90\xe2\xba\x2c"...}]}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=472, reachable_time=40929, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, {{len=1472, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("bond0"), ifi_flags=IFF_UP|IFF_BROADCAST|IFF_RUNNING|IFF_MASTER|IFF_MULTICAST|IFF_LOWER_UP, ifi_change=0}, [{{nla_len=10, nla_type=IFLA_IFNAME}, "bond0"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 6}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 16}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 16}, {{nla_len=5, nla_type=IFLA_CARRIER}, 1}, {{nla_len=12, nla_type=IFLA_QDISC}, "noqueue"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 2}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x90\xe2\xba\x2c\xaf\xfc"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=203142988, tx_packets=17019352, rx_bytes=292856696739, tx_bytes=4412307037, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=51480, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=203142988, tx_packets=17019352, rx_bytes=798920611, tx_bytes=117339741, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=51480, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=228, nla_type=IFLA_LINKINFO}, [{{nla_len=9, nla_type=IFLA_INFO_KIND}, "bond"}, {{nla_len=212, nla_type=IFLA_INFO_DATA}, "\x05\x00\x01\x00\x04\x00\x00\x00\x08\x00\x03\x00\x64\x00\x00\x00\x08\x00\x04\x00\x00\x00\x00\x00\x08\x00\x05\x00\x00\x00\x00\x00"...}]}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 0, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 1, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 0, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, IF_RS_SENT|IF_READY}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=603, reachable_time=44526, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 1, [IPSTATS_MIB_INOCTETS] = 56, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 10, [IPSTATS_MIB_OUTOCTETS] = 696, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 1, [IPSTATS_MIB_OUTMCASTPKTS] = 16, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 56, [IPSTATS_MIB_OUTMCASTOCTETS] = 1152, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 10, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, {{len=1244, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth2"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth2"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 2}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 8}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 8}, {{nla_len=5, nla_type=IFLA_CARRIER}, 0}, {{nla_len=9, nla_type=IFLA_QDISC}, "noop"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0xd0d60000, mem_end=0xd0d7ffff, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x00\x1e\x67\x54\x91\xaa"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4649, reachable_time=20883, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 4052
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=1244, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth3"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth3"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 2}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 8}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 8}, {{nla_len=5, nla_type=IFLA_CARRIER}, 0}, {{nla_len=9, nla_type=IFLA_QDISC}, "noop"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0xd0d40000, mem_end=0xd0d5ffff, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x00\x1e\x67\x54\x91\xab"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4655, reachable_time=32529, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, {{len=1244, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth4"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth4"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 2}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 8}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 8}, {{nla_len=5, nla_type=IFLA_CARRIER}, 0}, {{nla_len=9, nla_type=IFLA_QDISC}, "noop"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0xd0d20000, mem_end=0xd0d3ffff, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x00\x1e\x67\x54\x91\xac"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4665, reachable_time=19302, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, {{len=1244, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_ETHER, ifi_index=if_nametoindex("eth5"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [{{nla_len=9, nla_type=IFLA_IFNAME}, "eth5"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 1000}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 2}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 1500}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 8}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 8}, {{nla_len=5, nla_type=IFLA_CARRIER}, 0}, {{nla_len=9, nla_type=IFLA_QDISC}, "noop"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 1}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0xd0d00000, mem_end=0xd0d1ffff, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=10, nla_type=IFLA_ADDRESS}, "\x00\x1e\x67\x54\x91\xad"}, {{nla_len=10, nla_type=IFLA_BROADCAST}, "\xff\xff\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4671, reachable_time=44764, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 1500, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 3732
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=1308, type=RTM_NEWLINK, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, {ifi_family=AF_UNSPEC, ifi_type=ARPHRD_INFINIBAND, ifi_index=if_nametoindex("ib0"), ifi_flags=IFF_BROADCAST|IFF_MULTICAST, ifi_change=0}, [{{nla_len=8, nla_type=IFLA_IFNAME}, "ib0"}, {{nla_len=8, nla_type=IFLA_TXQLEN}, 256}, {{nla_len=5, nla_type=IFLA_OPERSTATE}, 2}, {{nla_len=5, nla_type=IFLA_LINKMODE}, 0}, {{nla_len=8, nla_type=IFLA_MTU}, 4092}, {{nla_len=8, nla_type=IFLA_GROUP}, 0}, {{nla_len=8, nla_type=IFLA_PROMISCUITY}, 0}, {{nla_len=8, nla_type=IFLA_NUM_TX_QUEUES}, 128}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SEGS}, 65535}, {{nla_len=8, nla_type=IFLA_GSO_MAX_SIZE}, 65536}, {{nla_len=8, nla_type=IFLA_NUM_RX_QUEUES}, 16}, {{nla_len=5, nla_type=IFLA_CARRIER}, 0}, {{nla_len=9, nla_type=IFLA_QDISC}, "noop"}, {{nla_len=8, nla_type=IFLA_CARRIER_CHANGES}, 0}, {{nla_len=5, nla_type=IFLA_PROTO_DOWN}, 0}, {{nla_len=36, nla_type=IFLA_MAP}, {mem_start=0, mem_end=0, base_addr=0, irq=0, dma=0, port=0}}, {{nla_len=24, nla_type=IFLA_ADDRESS}, "\x00\x00\x11\x0b\xfe\x80\x00\x00\x00\x00\x00\x00\xec\x0d\x9a\x03\x00\x48\x72\xee"}, {{nla_len=24, nla_type=IFLA_BROADCAST}, "\x00\xff\xff\xff\xff\x12\x40\x1b\xff\xff\x00\x00\x00\x00\x00\x00\xff\xff\xff\xff"}, {{nla_len=196, nla_type=IFLA_STATS64}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=100, nla_type=IFLA_STATS}, {rx_packets=0, tx_packets=0, rx_bytes=0, tx_bytes=0, rx_errors=0, tx_errors=0, rx_dropped=0, tx_dropped=0, multicast=0, collisions=0, rx_length_errors=0, rx_over_errors=0, rx_crc_errors=0, rx_frame_errors=0, rx_fifo_errors=0, rx_missed_errors=0, tx_aborted_errors=0, tx_carrier_errors=0, tx_fifo_errors=0, tx_heartbeat_errors=0, tx_window_errors=0, rx_compressed=0, tx_compressed=0, rx_nohandler=0}}, {{nla_len=44, nla_type=IFLA_LINKINFO}, [{{nla_len=10, nla_type=IFLA_INFO_KIND}, "ipoib"}, {{nla_len=28, nla_type=IFLA_INFO_DATA}, "\x06\x00\x01\x00\xff\xff\x00\x00\x06\x00\x02\x00\x00\x00\x00\x00\x06\x00\x03\x00\x00\x00\x00\x00"}]}, {{nla_len=728, nla_type=IFLA_AF_SPEC}, [{{nla_len=120, nla_type=AF_INET}, {{nla_len=116, nla_type=IFLA_INET_CONF}, [[IPV4_DEVCONF_FORWARDING-1] = 0, [IPV4_DEVCONF_MC_FORWARDING-1] = 0, [IPV4_DEVCONF_PROXY_ARP-1] = 0, [IPV4_DEVCONF_ACCEPT_REDIRECTS-1] = 1, [IPV4_DEVCONF_SECURE_REDIRECTS-1] = 1, [IPV4_DEVCONF_SEND_REDIRECTS-1] = 1, [IPV4_DEVCONF_SHARED_MEDIA-1] = 1, [IPV4_DEVCONF_RP_FILTER-1] = 1, [IPV4_DEVCONF_ACCEPT_SOURCE_ROUTE-1] = 0, [IPV4_DEVCONF_BOOTP_RELAY-1] = 0, [IPV4_DEVCONF_LOG_MARTIANS-1] = 0, [IPV4_DEVCONF_TAG-1] = 0, [IPV4_DEVCONF_ARPFILTER-1] = 0, [IPV4_DEVCONF_MEDIUM_ID-1] = 0, [IPV4_DEVCONF_NOXFRM-1] = 0, [IPV4_DEVCONF_NOPOLICY-1] = 0, [IPV4_DEVCONF_FORCE_IGMP_VERSION-1] = 0, [IPV4_DEVCONF_ARP_ANNOUNCE-1] = 0, [IPV4_DEVCONF_ARP_IGNORE-1] = 0, [IPV4_DEVCONF_PROMOTE_SECONDARIES-1] = 1, [IPV4_DEVCONF_ARP_ACCEPT-1] = 0, [IPV4_DEVCONF_ARP_NOTIFY-1] = 0, [IPV4_DEVCONF_ACCEPT_LOCAL-1] = 0, [IPV4_DEVCONF_SRC_VMARK-1] = 0, [IPV4_DEVCONF_PROXY_ARP_PVLAN-1] = 0, [IPV4_DEVCONF_ROUTE_LOCALNET-1] = 0, [IPV4_DEVCONF_IGMPV2_UNSOLICITED_REPORT_INTERVAL-1] = 10000, [IPV4_DEVCONF_IGMPV3_UNSOLICITED_REPORT_INTERVAL-1] = 1000]}}, {{nla_len=604, nla_type=AF_INET6}, [{{nla_len=8, nla_type=IFLA_INET6_FLAGS}, 0}, {{nla_len=20, nla_type=IFLA_INET6_CACHEINFO}, {max_reasm_len=65535, tstamp=4803, reachable_time=20397, retrans_time=1000}}, {{nla_len=192, nla_type=IFLA_INET6_CONF}, [[DEVCONF_FORWARDING] = 0, [DEVCONF_HOPLIMIT] = 64, [DEVCONF_MTU6] = 4092, [DEVCONF_ACCEPT_RA] = 1, [DEVCONF_ACCEPT_REDIRECTS] = 1, [DEVCONF_AUTOCONF] = 1, [DEVCONF_DAD_TRANSMITS] = 1, [DEVCONF_RTR_SOLICITS] = 3, [DEVCONF_RTR_SOLICIT_INTERVAL] = 4000, [DEVCONF_RTR_SOLICIT_DELAY] = 1000, [DEVCONF_USE_TEMPADDR] = 0, [DEVCONF_TEMP_VALID_LFT] = 604800, [DEVCONF_TEMP_PREFERED_LFT] = 86400, [DEVCONF_REGEN_MAX_RETRY] = 3, [DEVCONF_MAX_DESYNC_FACTOR] = 600, [DEVCONF_MAX_ADDRESSES] = 16, [DEVCONF_FORCE_MLD_VERSION] = 0, [DEVCONF_ACCEPT_RA_DEFRTR] = 1, [DEVCONF_ACCEPT_RA_PINFO] = 1, [DEVCONF_ACCEPT_RA_RTR_PREF] = 1, [DEVCONF_RTR_PROBE_INTERVAL] = 60000, [DEVCONF_ACCEPT_RA_RT_INFO_MAX_PLEN] = 0, [DEVCONF_PROXY_NDP] = 0, [DEVCONF_OPTIMISTIC_DAD] = 0, [DEVCONF_ACCEPT_SOURCE_ROUTE] = 0, [DEVCONF_MC_FORWARDING] = 0, [DEVCONF_DISABLE_IPV6] = 0, [DEVCONF_ACCEPT_DAD] = 1, [DEVCONF_FORCE_TLLAO] = 0, [DEVCONF_NDISC_NOTIFY] = 0, [DEVCONF_MLDV1_UNSOLICITED_REPORT_INTERVAL] = 10000, [DEVCONF_MLDV2_UNSOLICITED_REPORT_INTERVAL] = 1000, ...]}, {{nla_len=300, nla_type=IFLA_INET6_STATS}, [[IPSTATS_MIB_NUM] = 37, [IPSTATS_MIB_INPKTS] = 0, [IPSTATS_MIB_INOCTETS] = 0, [IPSTATS_MIB_INDELIVERS] = 0, [IPSTATS_MIB_OUTFORWDATAGRAMS] = 0, [IPSTATS_MIB_OUTPKTS] = 0, [IPSTATS_MIB_OUTOCTETS] = 0, [IPSTATS_MIB_INHDRERRORS] = 0, [IPSTATS_MIB_INTOOBIGERRORS] = 0, [IPSTATS_MIB_INNOROUTES] = 0, [IPSTATS_MIB_INADDRERRORS] = 0, [IPSTATS_MIB_INUNKNOWNPROTOS] = 0, [IPSTATS_MIB_INTRUNCATEDPKTS] = 0, [IPSTATS_MIB_INDISCARDS] = 0, [IPSTATS_MIB_OUTDISCARDS] = 0, [IPSTATS_MIB_OUTNOROUTES] = 0, [IPSTATS_MIB_REASMTIMEOUT] = 0, [IPSTATS_MIB_REASMREQDS] = 0, [IPSTATS_MIB_REASMOKS] = 0, [IPSTATS_MIB_REASMFAILS] = 0, [IPSTATS_MIB_FRAGOKS] = 0, [IPSTATS_MIB_FRAGFAILS] = 0, [IPSTATS_MIB_FRAGCREATES] = 0, [IPSTATS_MIB_INMCASTPKTS] = 0, [IPSTATS_MIB_OUTMCASTPKTS] = 0, [IPSTATS_MIB_INBCASTPKTS] = 0, [IPSTATS_MIB_OUTBCASTPKTS] = 0, [IPSTATS_MIB_INMCASTOCTETS] = 0, [IPSTATS_MIB_OUTMCASTOCTETS] = 0, [IPSTATS_MIB_INBCASTOCTETS] = 0, [IPSTATS_MIB_OUTBCASTOCTETS] = 0, [IPSTATS_MIB_CSUMERRORS] = 0, ...]}, {{nla_len=52, nla_type=IFLA_INET6_ICMP6STATS}, [[ICMP6_MIB_NUM] = 6, [ICMP6_MIB_INMSGS] = 0, [ICMP6_MIB_INERRORS] = 0, [ICMP6_MIB_OUTMSGS] = 0, [ICMP6_MIB_OUTERRORS] = 0, [ICMP6_MIB_CSUMERRORS] = 0]}, {{nla_len=20, nla_type=IFLA_INET6_TOKEN}, ::}, {{nla_len=5, nla_type=IFLA_INET6_ADDR_GEN_MODE}, IN6_ADDR_GEN_MODE_EUI64}]}]}]}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 1308
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1675935388, pid=1922}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(3, {{len=20, type=RTM_GETADDR, flags=NLM_F_REQUEST|NLM_F_DUMP, seq=1675935389, pid=0}, {ifa_family=AF_UNSPEC, ...}}, 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=76, type=RTM_NEWADDR, flags=NLM_F_MULTI, seq=1675935389, pid=1922}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [{{nla_len=8, nla_type=IFA_ADDRESS}, 127.0.0.1}, {{nla_len=8, nla_type=IFA_LOCAL}, 127.0.0.1}, {{nla_len=7, nla_type=IFA_LABEL}, "lo"}, {{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT}, {{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=4477, tstamp=4477}}]}, {{len=88, type=RTM_NEWADDR, flags=NLM_F_MULTI, seq=1675935389, pid=1922}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("bond0")}, [{{nla_len=8, nla_type=IFA_ADDRESS}, 192.168.20.207}, {{nla_len=8, nla_type=IFA_LOCAL}, 192.168.20.207}, {{nla_len=8, nla_type=IFA_BROADCAST}, 192.168.20.255}, {{nla_len=10, nla_type=IFA_LABEL}, "bond0"}, {{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT}, {{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=799, tstamp=799}}]}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{{len=72, type=RTM_NEWADDR, flags=NLM_F_MULTI, seq=1675935389, pid=1922}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [{{nla_len=20, nla_type=IFA_ADDRESS}, ::1}, {{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=4477, tstamp=4477}}, {{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT}]}, {{len=72, type=RTM_NEWADDR, flags=NLM_F_MULTI, seq=1675935389, pid=1922}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("bond0")}, [{{nla_len=20, nla_type=IFA_ADDRESS}, fe80::92e2:baff:fe2c:affc}, {{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=603, tstamp=603}}, {{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT}]}], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base={{len=20, type=NLMSG_DONE, flags=NLM_F_MULTI, seq=1675935389, pid=1922}, 0}, iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+pipe([3, 4])                            = 0
+uname({sysname="Linux", nodename="sv2007", ...}) = 0
+socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 5
+setsockopt(5, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+setsockopt(5, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+bind(5, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+getsockname(5, {sa_family=AF_INET, sin_port=htons(36234), sin_addr=inet_addr("0.0.0.0")}, [128->16]) = 0
+listen(5, 128)                          = 0
+stat("/home/pdiercks/mpitest_conda/env_v2/bin/srun", 0x7ffe51251960) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/qt-3.3/bin/srun", 0x7ffe51251960) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/srun", 0x7ffe51251960) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/srun", {st_mode=S_IFREG|0755, st_size=764352, ...}) = 0
+pipe([6, 7])                            = 0
+pipe([8, 9])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fa7b65cda10) = 1926
+close(7)                                = 0
+close(9)                                = 0
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 4, -1) = 1 ([{fd=5, revents=POLLIN}])
+accept(5, NULL, NULL)                   = 7
+setsockopt(7, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}], 5, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "HYD\0\0\0\0\0", 8)             = 8
+write(7, "\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "p\0\0\0", 4)                  = 4
+write(7, "\n\0\0\0", 4)                 = 4
+write(7, "--version\0", 10)             = 10
+write(7, "\6\0\0\0", 4)                 = 4
+write(7, "4.0.3\0", 6)                  = 6
+write(7, "\24\0\0\0", 4)                = 4
+write(7, "--iface-ip-env-name\0", 20)   = 20
+write(7, "!\0\0\0", 4)                  = 4
+write(7, "MPIR_CVAR_CH3_INTERFACE_HOSTNAME"..., 33) = 33
+write(7, "\v\0\0\0", 4)                 = 4
+write(7, "--hostname\0", 11)            = 11
+write(7, "\7\0\0\0", 4)                 = 4
+write(7, "sv2007\0", 7)                 = 7
+write(7, "\22\0\0\0", 4)                = 4
+write(7, "--global-core-map\0", 18)     = 18
+write(7, "\6\0\0\0", 4)                 = 4
+write(7, "0,3,6\0", 6)                  = 6
+write(7, "\r\0\0\0", 4)                 = 4
+write(7, "--pmi-id-map\0", 13)          = 13
+write(7, "\4\0\0\0", 4)                 = 4
+write(7, "0,0\0", 4)                    = 4
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "--global-process-count\0", 23) = 23
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "6\0", 2)                      = 2
+write(7, "\17\0\0\0", 4)                = 4
+write(7, "--auto-cleanup\0", 15)        = 15
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "1\0", 2)                      = 2
+write(7, "\16\0\0\0", 4)                = 4
+write(7, "--pmi-kvsname\0", 14)         = 14
+write(7, "\34\0\0\0", 4)                = 4
+write(7, "kvs_1922_0_992999704_sv2007\0", 28) = 28
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "--pmi-process-mapping\0", 22) = 22
+write(7, "\21\0\0\0", 4)                = 4
+write(7, "(vector,(0,2,3))\0", 17)      = 17
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "--global-inherited-env\0", 23) = 23
+write(7, "\3\0\0\0", 4)                 = 4
+write(7, "73\0", 3)                     = 3
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "'LC_PAPER=de_DE.UTF-8'\0", 23) = 23
+write(7, "\"\0\0\0", 4)                 = 4
+write(7, "'SLURM_JOB_NAME=mpitest_conda_v2"..., 34) = 34
+write(7, "\31\0\0\0", 4)                = 4
+write(7, "'LC_ADDRESS=de_DE.UTF-8'\0", 25) = 25
+write(7, "\31\0\0\0", 4)                = 4
+write(7, "'XDG_SESSION_ID=3203354'\0", 25) = 25
+write(7, "\31\0\0\0", 4)                = 4
+write(7, "'SLURMD_NODENAME=sv2007'\0", 25) = 25
+write(7, "\35\0\0\0", 4)                = 4
+write(7, "'SLURM_TOPOLOGY_ADDR=sv2007'\0", 29) = 29
+write(7, "\32\0\0\0", 4)                = 4
+write(7, "'SLURM_NTASKS_PER_NODE=3'\0", 26) = 26
+write(7, "\32\0\0\0", 4)                = 4
+write(7, "'LC_MONETARY=de_DE.UTF-8'\0", 26) = 26
+write(7, "\22\0\0\0", 4)                = 4
+write(7, "'HOSTNAME=sv2007'\0", 18)     = 18
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "'SLURM_PRIO_PROCESS=0'\0", 23) = 23
+write(7, "\34\0\0\0", 4)                = 4
+write(7, "'SLURM_NODE_ALIASES=(null)'\0", 28) = 28
+write(7, "\22\0\0\0", 4)                = 4
+write(7, "'SHELL=/bin/bash'\0", 18)     = 18
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'TERM=xterm-256color'\0", 22) = 22
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_QOS=normal'\0", 23) = 23
+write(7, "\20\0\0\0", 4)                = 4
+write(7, "'HISTSIZE=1000'\0", 16)       = 16
+write(7, "\16\0\0\0", 4)                = 4
+write(7, "'TMPDIR=/tmp'\0", 14)         = 14
+write(7, "#\0\0\0", 4)                  = 4
+write(7, "'SLURM_TOPOLOGY_ADDR_PATTERN=nod"..., 35) = 35
+write(7, "$\0\0\0", 4)                  = 4
+write(7, "'SSH_CLIENT=141.63.28.138 44894 "..., 36) = 36
+write(7, "\31\0\0\0", 4)                = 4
+write(7, "'LC_NUMERIC=de_DE.UTF-8'\0", 25) = 25
+write(7, "\"\0\0\0", 4)                 = 4
+write(7, "'AWP_ROOT222=/opt/ansys_inc/v222"..., 34) = 34
+write(7, "\32\0\0\0", 4)                = 4
+write(7, "'QTDIR=/usr/lib64/qt-3.3'\0", 26) = 26
+write(7, "\"\0\0\0", 4)                 = 4
+write(7, "'QTINC=/usr/lib64/qt-3.3/include"..., 34) = 34
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'SSH_TTY=/dev/pts/14'\0", 22) = 22
+write(7, "\36\0\0\0", 4)                = 4
+write(7, "'QT_GRAPHICSSYSTEM_CHECKED=1'\0", 30) = 30
+write(7, "\20\0\0\0", 4)                = 4
+write(7, "'USER=pdiercks'\0", 16)       = 16
+write(7, "\33\0\0\0", 4)                = 4
+write(7, "'LC_TELEPHONE=de_DE.UTF-8'\0", 27) = 27
+write(7, "\272\6\0\0", 4)               = 4
+write(7, "'LS_COLORS=rs=0:di=38;5;27:ln=38"..., 1722) = 1722
+write(7, "\21\0\0\0", 4)                = 4
+write(7, "'SLURM_NTASKS=6'\0", 17)      = 17
+write(7, "\244\0\0\0", 4)               = 4
+write(7, "'PATH=/home/pdiercks/mpitest_con"..., 164) = 164
+write(7, " \0\0\0", 4)                  = 4
+write(7, "'MAIL=/var/spool/mail/pdiercks'\0", 32) = 32
+write(7, "<\0\0\0", 4)                  = 4
+write(7, "'SLURM_WORKING_CLUSTER=sv2000:19"..., 60) = 60
+write(7, "#\0\0\0", 4)                  = 4
+write(7, "'SLURM_CONF=/etc/slurm/slurm.con"..., 35) = 35
+write(7, "\25\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_ID=83897'\0", 21)  = 21
+write(7, "3\0\0\0", 4)                  = 4
+write(7, "'CONDA_PREFIX=/home/pdiercks/mpi"..., 51) = 51
+write(7, " \0\0\0", 4)                  = 4
+write(7, "'LC_IDENTIFICATION=de_DE.UTF-8'\0", 32) = 32
+write(7, "\32\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_USER=pdiercks'\0", 26) = 26
+write(7, "#\0\0\0", 4)                  = 4
+write(7, "'PWD=/home/pdiercks/mpitest_cond"..., 35) = 35
+write(7, "\"\0\0\0", 4)                 = 4
+write(7, "'AWP_ROOT202=/opt/ansys_inc/v202"..., 34) = 34
+write(7, "\23\0\0\0", 4)                = 4
+write(7, "'LANG=en_US.UTF-8'\0", 19)    = 19
+write(7, "N\0\0\0", 4)                  = 4
+write(7, "'MODULEPATH=/usr/share/Modules/m"..., 78) = 78
+write(7, "\33\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_UID=1364630856'\0", 27) = 27
+write(7, "\35\0\0\0", 4)                = 4
+write(7, "'LC_MEASUREMENT=de_DE.UTF-8'\0", 29) = 29
+write(7, "\21\0\0\0", 4)                = 4
+write(7, "'LOADEDMODULES='\0", 17)      = 17
+write(7, "0\0\0\0", 4)                  = 4
+write(7, "'SLURM_SUBMIT_DIR=/home/pdiercks"..., 48) = 48
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'SLURM_TASK_PID=1898'\0", 22) = 22
+write(7, "\24\0\0\0", 4)                = 4
+write(7, "'ENVIRONMENT=BATCH'\0", 20)   = 20
+write(7, "\31\0\0\0", 4)                = 4
+write(7, "'HISTCONTROL=ignoredups'\0", 25) = 25
+write(7, "#\0\0\0", 4)                  = 4
+write(7, "'SLURM_JOB_NODELIST=sv[2007-2008"..., 35) = 35
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'HOME=/home/pdiercks'\0", 22) = 22
+write(7, "\n\0\0\0", 4)                 = 4
+write(7, "'SHLVL=2'\0", 10)             = 10
+write(7, "\33\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_GID=1364600513'\0", 27) = 27
+write(7, " \0\0\0", 4)                  = 4
+write(7, "'SLURM_JOB_CPUS_PER_NODE=3(x2)'\0", 32) = 32
+write(7, "\34\0\0\0", 4)                = 4
+write(7, "'SLURM_CLUSTER_NAME=sv2000'\0", 28) = 28
+write(7, "\20\0\0\0", 4)                = 4
+write(7, "'SLURM_GTIDS=0'\0", 16)       = 16
+write(7, "\33\0\0\0", 4)                = 4
+write(7, "'SLURM_SUBMIT_HOST=sv2000'\0", 27) = 27
+write(7, "\34\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_PARTITION=batch'\0", 28) = 28
+write(7, "\"\0\0\0", 4)                 = 4
+write(7, "'AWP_ROOT212=/opt/ansys_inc/v212"..., 34) = 34
+write(7, "\27\0\0\0", 4)                = 4
+write(7, "'_CONDA_PACK_OLD_PS1='\0", 23) = 23
+write(7, "\23\0\0\0", 4)                = 4
+write(7, "'LOGNAME=pdiercks'\0", 19)    = 19
+write(7, "\36\0\0\0", 4)                = 4
+write(7, "'QTLIB=/usr/lib64/qt-3.3/lib'\0", 30) = 30
+write(7, "\35\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_ACCOUNT=pdiercks'\0", 29) = 29
+write(7, "7\0\0\0", 4)                  = 4
+write(7, "'SSH_CONNECTION=141.63.28.138 44"..., 55) = 55
+write(7, "}\0\0\0", 4)                  = 4
+write(7, "'XDG_DATA_DIRS=/home/pdiercks/.l"..., 125) = 125
+write(7, "\30\0\0\0", 4)                = 4
+write(7, "'SLURM_JOB_NUM_NODES=2'\0", 24) = 24
+write(7, "!\0\0\0", 4)                  = 4
+write(7, "'MODULESHOME=/usr/share/Modules'"..., 33) = 33
+write(7, "%\0\0\0", 4)                  = 4
+write(7, "'LESSOPEN=||/usr/bin/lesspipe.sh"..., 37) = 37
+write(7, "'\0\0\0", 4)                  = 4
+write(7, "'XDG_RUNTIME_DIR=/run/user/13646"..., 39) = 39
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'LC_TIME=de_DE.UTF-8'\0", 22) = 22
+write(7, "\34\0\0\0", 4)                = 4
+write(7, "'SLURM_MEM_PER_NODE=250000'\0", 28) = 28
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'LC_NAME=de_DE.UTF-8'\0", 22) = 22
+write(7, "?\0\0\0", 4)                  = 4
+write(7, "'BASH_FUNC_module()=() {  eval `"..., 63) = 63
+write(7, "\24\0\0\0", 4)                = 4
+write(7, "'_=/usr/bin/strace'\0", 20)   = 20
+write(7, "\26\0\0\0", 4)                = 4
+write(7, "'ZES_ENABLE_SYSMAN=1'\0", 22) = 22
+write(7, "\22\0\0\0", 4)                = 4
+write(7, "--global-user-env\0", 18)     = 18
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "0\0", 2)                      = 2
+write(7, "\24\0\0\0", 4)                = 4
+write(7, "--global-system-env\0", 20)   = 20
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "1\0", 2)                      = 2
+write(7, "%\0\0\0", 4)                  = 4
+write(7, "'GFORTRAN_UNBUFFERED_PRECONNECTE"..., 37) = 37
+write(7, "\23\0\0\0", 4)                = 4
+write(7, "--proxy-core-count\0", 19)    = 19
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "3\0", 2)                      = 2
+write(7, "\7\0\0\0", 4)                 = 4
+write(7, "--exec\0", 7)                 = 7
+write(7, "\16\0\0\0", 4)                = 4
+write(7, "--exec-appnum\0", 14)         = 14
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "0\0", 2)                      = 2
+write(7, "\22\0\0\0", 4)                = 4
+write(7, "--exec-proc-count\0", 18)     = 18
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "3\0", 2)                      = 2
+write(7, "\21\0\0\0", 4)                = 4
+write(7, "--exec-local-env\0", 17)      = 17
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "0\0", 2)                      = 2
+write(7, "\f\0\0\0", 4)                 = 4
+write(7, "--exec-wdir\0", 12)           = 12
+write(7, "\35\0\0\0", 4)                = 4
+write(7, "/home/pdiercks/mpitest_conda\0", 29) = 29
+write(7, "\f\0\0\0", 4)                 = 4
+write(7, "--exec-args\0", 12)           = 12
+write(7, "\2\0\0\0", 4)                 = 4
+write(7, "1\0", 2)                      = 2
+write(7, "\16\0\0\0", 4)                = 4
+write(7, "./mpitest.exe\0", 14)         = 14
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=0, events=POLLIN}], 6, -1) = 2 ([{fd=5, revents=POLLIN}, {fd=0, revents=POLLIN}])
+accept(5, NULL, NULL)                   = 9
+setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+brk(NULL)                               = 0x55ae8eec9000
+brk(0x55ae8eef4000)                     = 0x55ae8eef4000
+read(0, "", 65536)                      = 0
+write(7, "\4\0\0\0\0\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+brk(NULL)                               = 0x55ae8eef4000
+brk(NULL)                               = 0x55ae8eef4000
+brk(0x55ae8eee4000)                     = 0x55ae8eee4000
+brk(NULL)                               = 0x55ae8eee4000
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "HYD\0\1\0\0\0", 8)             = 8
+write(9, "\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "p\0\0\0", 4)                  = 4
+write(9, "\n\0\0\0", 4)                 = 4
+write(9, "--version\0", 10)             = 10
+write(9, "\6\0\0\0", 4)                 = 4
+write(9, "4.0.3\0", 6)                  = 6
+write(9, "\24\0\0\0", 4)                = 4
+write(9, "--iface-ip-env-name\0", 20)   = 20
+write(9, "!\0\0\0", 4)                  = 4
+write(9, "MPIR_CVAR_CH3_INTERFACE_HOSTNAME"..., 33) = 33
+write(9, "\v\0\0\0", 4)                 = 4
+write(9, "--hostname\0", 11)            = 11
+write(9, "\7\0\0\0", 4)                 = 4
+write(9, "sv2008\0", 7)                 = 7
+write(9, "\22\0\0\0", 4)                = 4
+write(9, "--global-core-map\0", 18)     = 18
+write(9, "\6\0\0\0", 4)                 = 4
+write(9, "0,3,6\0", 6)                  = 6
+write(9, "\r\0\0\0", 4)                 = 4
+write(9, "--pmi-id-map\0", 13)          = 13
+write(9, "\4\0\0\0", 4)                 = 4
+write(9, "0,3\0", 4)                    = 4
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "--global-process-count\0", 23) = 23
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "6\0", 2)                      = 2
+write(9, "\17\0\0\0", 4)                = 4
+write(9, "--auto-cleanup\0", 15)        = 15
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "1\0", 2)                      = 2
+write(9, "\16\0\0\0", 4)                = 4
+write(9, "--pmi-kvsname\0", 14)         = 14
+write(9, "\34\0\0\0", 4)                = 4
+write(9, "kvs_1922_0_992999704_sv2007\0", 28) = 28
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "--pmi-process-mapping\0", 22) = 22
+write(9, "\21\0\0\0", 4)                = 4
+write(9, "(vector,(0,2,3))\0", 17)      = 17
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "--global-inherited-env\0", 23) = 23
+write(9, "\3\0\0\0", 4)                 = 4
+write(9, "73\0", 3)                     = 3
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "'LC_PAPER=de_DE.UTF-8'\0", 23) = 23
+write(9, "\"\0\0\0", 4)                 = 4
+write(9, "'SLURM_JOB_NAME=mpitest_conda_v2"..., 34) = 34
+write(9, "\31\0\0\0", 4)                = 4
+write(9, "'LC_ADDRESS=de_DE.UTF-8'\0", 25) = 25
+write(9, "\31\0\0\0", 4)                = 4
+write(9, "'XDG_SESSION_ID=3203354'\0", 25) = 25
+write(9, "\31\0\0\0", 4)                = 4
+write(9, "'SLURMD_NODENAME=sv2007'\0", 25) = 25
+write(9, "\35\0\0\0", 4)                = 4
+write(9, "'SLURM_TOPOLOGY_ADDR=sv2007'\0", 29) = 29
+write(9, "\32\0\0\0", 4)                = 4
+write(9, "'SLURM_NTASKS_PER_NODE=3'\0", 26) = 26
+write(9, "\32\0\0\0", 4)                = 4
+write(9, "'LC_MONETARY=de_DE.UTF-8'\0", 26) = 26
+write(9, "\22\0\0\0", 4)                = 4
+write(9, "'HOSTNAME=sv2007'\0", 18)     = 18
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "'SLURM_PRIO_PROCESS=0'\0", 23) = 23
+write(9, "\34\0\0\0", 4)                = 4
+write(9, "'SLURM_NODE_ALIASES=(null)'\0", 28) = 28
+write(9, "\22\0\0\0", 4)                = 4
+write(9, "'SHELL=/bin/bash'\0", 18)     = 18
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'TERM=xterm-256color'\0", 22) = 22
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_QOS=normal'\0", 23) = 23
+write(9, "\20\0\0\0", 4)                = 4
+write(9, "'HISTSIZE=1000'\0", 16)       = 16
+write(9, "\16\0\0\0", 4)                = 4
+write(9, "'TMPDIR=/tmp'\0", 14)         = 14
+write(9, "#\0\0\0", 4)                  = 4
+write(9, "'SLURM_TOPOLOGY_ADDR_PATTERN=nod"..., 35) = 35
+write(9, "$\0\0\0", 4)                  = 4
+write(9, "'SSH_CLIENT=141.63.28.138 44894 "..., 36) = 36
+write(9, "\31\0\0\0", 4)                = 4
+write(9, "'LC_NUMERIC=de_DE.UTF-8'\0", 25) = 25
+write(9, "\"\0\0\0", 4)                 = 4
+write(9, "'AWP_ROOT222=/opt/ansys_inc/v222"..., 34) = 34
+write(9, "\32\0\0\0", 4)                = 4
+write(9, "'QTDIR=/usr/lib64/qt-3.3'\0", 26) = 26
+write(9, "\"\0\0\0", 4)                 = 4
+write(9, "'QTINC=/usr/lib64/qt-3.3/include"..., 34) = 34
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'SSH_TTY=/dev/pts/14'\0", 22) = 22
+write(9, "\36\0\0\0", 4)                = 4
+write(9, "'QT_GRAPHICSSYSTEM_CHECKED=1'\0", 30) = 30
+write(9, "\20\0\0\0", 4)                = 4
+write(9, "'USER=pdiercks'\0", 16)       = 16
+write(9, "\33\0\0\0", 4)                = 4
+write(9, "'LC_TELEPHONE=de_DE.UTF-8'\0", 27) = 27
+write(9, "\272\6\0\0", 4)               = 4
+write(9, "'LS_COLORS=rs=0:di=38;5;27:ln=38"..., 1722) = 1722
+write(9, "\21\0\0\0", 4)                = 4
+write(9, "'SLURM_NTASKS=6'\0", 17)      = 17
+write(9, "\244\0\0\0", 4)               = 4
+write(9, "'PATH=/home/pdiercks/mpitest_con"..., 164) = 164
+write(9, " \0\0\0", 4)                  = 4
+write(9, "'MAIL=/var/spool/mail/pdiercks'\0", 32) = 32
+write(9, "<\0\0\0", 4)                  = 4
+write(9, "'SLURM_WORKING_CLUSTER=sv2000:19"..., 60) = 60
+write(9, "#\0\0\0", 4)                  = 4
+write(9, "'SLURM_CONF=/etc/slurm/slurm.con"..., 35) = 35
+write(9, "\25\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_ID=83897'\0", 21)  = 21
+write(9, "3\0\0\0", 4)                  = 4
+write(9, "'CONDA_PREFIX=/home/pdiercks/mpi"..., 51) = 51
+write(9, " \0\0\0", 4)                  = 4
+write(9, "'LC_IDENTIFICATION=de_DE.UTF-8'\0", 32) = 32
+write(9, "\32\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_USER=pdiercks'\0", 26) = 26
+write(9, "#\0\0\0", 4)                  = 4
+write(9, "'PWD=/home/pdiercks/mpitest_cond"..., 35) = 35
+write(9, "\"\0\0\0", 4)                 = 4
+write(9, "'AWP_ROOT202=/opt/ansys_inc/v202"..., 34) = 34
+write(9, "\23\0\0\0", 4)                = 4
+write(9, "'LANG=en_US.UTF-8'\0", 19)    = 19
+write(9, "N\0\0\0", 4)                  = 4
+write(9, "'MODULEPATH=/usr/share/Modules/m"..., 78) = 78
+write(9, "\33\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_UID=1364630856'\0", 27) = 27
+write(9, "\35\0\0\0", 4)                = 4
+write(9, "'LC_MEASUREMENT=de_DE.UTF-8'\0", 29) = 29
+write(9, "\21\0\0\0", 4)                = 4
+write(9, "'LOADEDMODULES='\0", 17)      = 17
+write(9, "0\0\0\0", 4)                  = 4
+write(9, "'SLURM_SUBMIT_DIR=/home/pdiercks"..., 48) = 48
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'SLURM_TASK_PID=1898'\0", 22) = 22
+write(9, "\24\0\0\0", 4)                = 4
+write(9, "'ENVIRONMENT=BATCH'\0", 20)   = 20
+write(9, "\31\0\0\0", 4)                = 4
+write(9, "'HISTCONTROL=ignoredups'\0", 25) = 25
+write(9, "#\0\0\0", 4)                  = 4
+write(9, "'SLURM_JOB_NODELIST=sv[2007-2008"..., 35) = 35
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'HOME=/home/pdiercks'\0", 22) = 22
+write(9, "\n\0\0\0", 4)                 = 4
+write(9, "'SHLVL=2'\0", 10)             = 10
+write(9, "\33\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_GID=1364600513'\0", 27) = 27
+write(9, " \0\0\0", 4)                  = 4
+write(9, "'SLURM_JOB_CPUS_PER_NODE=3(x2)'\0", 32) = 32
+write(9, "\34\0\0\0", 4)                = 4
+write(9, "'SLURM_CLUSTER_NAME=sv2000'\0", 28) = 28
+write(9, "\20\0\0\0", 4)                = 4
+write(9, "'SLURM_GTIDS=0'\0", 16)       = 16
+write(9, "\33\0\0\0", 4)                = 4
+write(9, "'SLURM_SUBMIT_HOST=sv2000'\0", 27) = 27
+write(9, "\34\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_PARTITION=batch'\0", 28) = 28
+write(9, "\"\0\0\0", 4)                 = 4
+write(9, "'AWP_ROOT212=/opt/ansys_inc/v212"..., 34) = 34
+write(9, "\27\0\0\0", 4)                = 4
+write(9, "'_CONDA_PACK_OLD_PS1='\0", 23) = 23
+write(9, "\23\0\0\0", 4)                = 4
+write(9, "'LOGNAME=pdiercks'\0", 19)    = 19
+write(9, "\36\0\0\0", 4)                = 4
+write(9, "'QTLIB=/usr/lib64/qt-3.3/lib'\0", 30) = 30
+write(9, "\35\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_ACCOUNT=pdiercks'\0", 29) = 29
+write(9, "7\0\0\0", 4)                  = 4
+write(9, "'SSH_CONNECTION=141.63.28.138 44"..., 55) = 55
+write(9, "}\0\0\0", 4)                  = 4
+write(9, "'XDG_DATA_DIRS=/home/pdiercks/.l"..., 125) = 125
+write(9, "\30\0\0\0", 4)                = 4
+write(9, "'SLURM_JOB_NUM_NODES=2'\0", 24) = 24
+write(9, "!\0\0\0", 4)                  = 4
+write(9, "'MODULESHOME=/usr/share/Modules'"..., 33) = 33
+write(9, "%\0\0\0", 4)                  = 4
+write(9, "'LESSOPEN=||/usr/bin/lesspipe.sh"..., 37) = 37
+write(9, "'\0\0\0", 4)                  = 4
+write(9, "'XDG_RUNTIME_DIR=/run/user/13646"..., 39) = 39
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'LC_TIME=de_DE.UTF-8'\0", 22) = 22
+write(9, "\34\0\0\0", 4)                = 4
+write(9, "'SLURM_MEM_PER_NODE=250000'\0", 28) = 28
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'LC_NAME=de_DE.UTF-8'\0", 22) = 22
+write(9, "?\0\0\0", 4)                  = 4
+write(9, "'BASH_FUNC_module()=() {  eval `"..., 63) = 63
+write(9, "\24\0\0\0", 4)                = 4
+write(9, "'_=/usr/bin/strace'\0", 20)   = 20
+write(9, "\26\0\0\0", 4)                = 4
+write(9, "'ZES_ENABLE_SYSMAN=1'\0", 22) = 22
+write(9, "\22\0\0\0", 4)                = 4
+write(9, "--global-user-env\0", 18)     = 18
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "0\0", 2)                      = 2
+write(9, "\24\0\0\0", 4)                = 4
+write(9, "--global-system-env\0", 20)   = 20
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "1\0", 2)                      = 2
+write(9, "%\0\0\0", 4)                  = 4
+write(9, "'GFORTRAN_UNBUFFERED_PRECONNECTE"..., 37) = 37
+write(9, "\23\0\0\0", 4)                = 4
+write(9, "--proxy-core-count\0", 19)    = 19
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "3\0", 2)                      = 2
+write(9, "\7\0\0\0", 4)                 = 4
+write(9, "--exec\0", 7)                 = 7
+write(9, "\16\0\0\0", 4)                = 4
+write(9, "--exec-appnum\0", 14)         = 14
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "0\0", 2)                      = 2
+write(9, "\22\0\0\0", 4)                = 4
+write(9, "--exec-proc-count\0", 18)     = 18
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "3\0", 2)                      = 2
+write(9, "\21\0\0\0", 4)                = 4
+write(9, "--exec-local-env\0", 17)      = 17
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "0\0", 2)                      = 2
+write(9, "\f\0\0\0", 4)                 = 4
+write(9, "--exec-wdir\0", 12)           = 12
+write(9, "\35\0\0\0", 4)                = 4
+write(9, "/home/pdiercks/mpitest_conda\0", 29) = 29
+write(9, "\f\0\0\0", 4)                 = 4
+write(9, "--exec-args\0", 12)           = 12
+write(9, "\2\0\0\0", 4)                 = 4
+write(9, "1\0", 2)                      = 2
+write(9, "\16\0\0\0", 4)                = 4
+write(9, "./mpitest.exe\0", 14)         = 14
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\5\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "\225\7\0\0\226\7\0\0\227\7\0\0", 12) = 12
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\5\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "\374\20\2\0\375\20\2\0\376\20\2\0", 12) = 12
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\7\0\0\0O\0\0\0\5\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "cmd=put -bcast-1-0=2F6465762F736"..., 79) = 79
+mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa7b654c000
+munmap(0x7fa7b654c000, 528384)          = 0
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\7\0\0\0\16\0\0\0\5\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "cmd=barrier_in", 14)           = 14
+brk(NULL)                               = 0x55ae8eee4000
+brk(0x55ae8ef64000)                     = 0x55ae8ef64000
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\7\0\0\0O\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "cmd=put -bcast-1-3=2F6465762F736"..., 79) = 79
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\7\0\0\0\16\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "cmd=barrier_in", 14)           = 14
+write(7, "\2\0\0\0\242\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "cmd=keyval_cache -bcast-1-0=2F64"..., 162) = 162
+write(9, "\2\0\0\0\242\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "cmd=keyval_cache -bcast-1-0=2F64"..., 162) = 162
+write(7, "\2\0\0\0\20\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "cmd=barrier_out\n", 16)       = 16
+write(9, "\2\0\0\0\20\0\0\0\4\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "cmd=barrier_out\n", 16)       = 16
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\7\0\0\0\326\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "cmd=put P0-businesscard=descript"..., 214) = 214
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\7\0\0\0\16\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "cmd=barrier_in", 14)           = 14
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\7\0\0\0\326\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "cmd=put P3-businesscard=descript"..., 214) = 214
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\7\0\0\0\16\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "cmd=barrier_in", 14)           = 14
+write(7, "\2\0\0\0\260\1\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "cmd=keyval_cache P0-businesscard"..., 432) = 432
+write(9, "\2\0\0\0\260\1\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "cmd=keyval_cache P0-businesscard"..., 432) = 432
+write(7, "\2\0\0\0\20\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "cmd=barrier_out\n", 16)       = 16
+write(9, "\2\0\0\0\20\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "cmd=barrier_out\n", 16)       = 16
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\7\0\0\0\16\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "cmd=barrier_in", 14)           = 14
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\7\0\0\0\16\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "cmd=barrier_in", 14)           = 14
+write(7, "\2\0\0\0\20\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(7, "cmd=barrier_out\n", 16)       = 16
+write(9, "\2\0\0\0\20\0\0\0\6\0\0\0\1\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+write(9, "cmd=barrier_out\n", 16)       = 16
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 1 ([{fd=7, revents=POLLIN}])
+read(7, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\0\0\0\0\0\0\0\0\377\377\377\377", 32) = 32
+read(7, "Hello, I am rank 0/6 on sv2007\n", 31) = 31
+write(1, "Hello, I am rank 0/6 on sv2007\n", 31) = 31
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 2 ([{fd=7, revents=POLLIN}, {fd=9, revents=POLLIN}])
+read(7, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\0\0\0\0\1\0\0\0\377\377\377\377", 32) = 32
+read(7, "Hello, I am rank 1/6 on sv2007\n", 31) = 31
+write(1, "Hello, I am rank 1/6 on sv2007\n", 31) = 31
+read(9, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\1\0\0\0\3\0\0\0\377\377\377\377", 32) = 32
+read(9, "Hello, I am rank 3/6 on sv2008\n", 31) = 31
+write(1, "Hello, I am rank 3/6 on sv2008\n", 31) = 31
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 2 ([{fd=7, revents=POLLIN}, {fd=9, revents=POLLIN}])
+read(7, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\0\0\0\0\2\0\0\0\377\377\377\377", 32) = 32
+read(7, "Hello, I am rank 2/6 on sv2007\n", 31) = 31
+write(1, "Hello, I am rank 2/6 on sv2007\n", 31) = 31
+read(9, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\1\0\0\0\4\0\0\0\377\377\377\377", 32) = 32
+read(9, "Hello, I am rank 4/6 on sv2008\n", 31) = 31
+write(1, "Hello, I am rank 4/6 on sv2008\n", 31) = 31
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=7, events=POLLIN}, {fd=9, events=POLLIN}], 6, -1) = 2 ([{fd=7, revents=POLLIN}, {fd=9, revents=POLLIN}])
+read(7, "\6\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(7, "\0\0\0\0\0\0\0\0\0\0\0\0", 12) = 12
+close(7)                                = 0
+read(9, "\10\0\0\0\37\0\0\0\377\377\377\377\377\377\377\377\0\0\0\0\1\0\0\0\5\0\0\0\377\377\377\377", 32) = 32
+read(9, "Hello, I am rank 5/6 on sv2008\n", 31) = 31
+write(1, "Hello, I am rank 5/6 on sv2008\n", 31) = 31
+poll([{fd=3, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, -1) = 1 ([{fd=9, revents=POLLIN}])
+read(9, "\6\0\0\0\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377\377", 32) = 32
+read(9, "\0\0\0\0\0\0\0\0\0\0\0\0", 12) = 12
+close(9)                                = 0
+close(5)                                = 0
+poll([{fd=3, events=POLLIN}, {fd=6, events=POLLIN}, {fd=8, events=POLLIN}], 3, -1) = 1 ([{fd=6, revents=POLLHUP}])
+fcntl(6, F_GETFL)                       = 0 (flags O_RDONLY)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1926, si_uid=1364630856, si_status=0, si_utime=1, si_stime=1} ---
+fcntl(6, F_SETFL, O_RDONLY|O_NONBLOCK)  = 0
+fcntl(1, F_GETFL)                       = 0x8401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+fcntl(1, F_SETFL, O_WRONLY|O_APPEND|O_NONBLOCK|O_LARGEFILE) = 0
+read(6, "", 65536)                      = 0
+close(6)                                = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 1926
+poll([{fd=3, events=POLLIN}, {fd=8, events=POLLIN}], 2, -1) = 1 ([{fd=8, revents=POLLHUP}])
+fcntl(8, F_GETFL)                       = 0 (flags O_RDONLY)
+fcntl(8, F_SETFL, O_RDONLY|O_NONBLOCK)  = 0
+fcntl(2, F_GETFL)                       = 0x8401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+fcntl(2, F_SETFL, O_WRONLY|O_APPEND|O_NONBLOCK|O_LARGEFILE) = 0
+read(8, "", 65536)                      = 0
+close(8)                                = 0
+wait4(-1, 0x7ffe5125977c, WNOHANG, NULL) = -1 ECHILD (No child processes)
+fcntl(1, F_GETFL)                       = 0x8c01 (flags O_WRONLY|O_APPEND|O_NONBLOCK|O_LARGEFILE)
+fcntl(1, F_SETFL, O_WRONLY|O_APPEND|O_LARGEFILE) = 0
+fcntl(2, F_GETFL)                       = 0x8c01 (flags O_WRONLY|O_APPEND|O_NONBLOCK|O_LARGEFILE)
+fcntl(2, F_SETFL, O_WRONLY|O_APPEND|O_LARGEFILE) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
