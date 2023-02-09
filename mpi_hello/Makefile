@@ -8,7 +8,7 @@ MPIEXEC ?= mpiexec
 # Default number of MPI processes to start
 NPROCS=4
 
-PROG = hello
+PROG = mpitest
 SRC = $(PROG).c
 EXE = $(PROG).exe
 
