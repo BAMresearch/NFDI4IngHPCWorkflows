@@ -87,7 +87,7 @@ following libraries/compilers available:
 #### Variant 1
 conda environment contains same MPI implementation (openmpi, mpich) and version as host.
 
-Steps:
+Complete set of steps:
 1. (local linux workstation): create environment
 ```sh
 $ mamba env create -n <env-name> -f cenvs/variant_1.yaml -p PREFIX
@@ -102,18 +102,27 @@ $ conda pack -n <env-name> -o archive.tar.gz
 ```sh
 $ mkdir -p my_env
 $ tar -xzf archive.tar.gz -C my_env
+```
+5. (on target machine): activate the environment and run application
+```sh
 # Activate the environment
 $ source my_env/bin/activate
 # Cleanup prefixes
 (my_env) $ conda-unpack
-# Everything should work
+# Run heavy computation
+(my_env) $ python3 my_heavy_computation.py
 # Deactivate once you are done
 (my_env) $ source my_env/bin/deactivate
 ```
-The job is then defined in `mpijob_v1.sh` and submitted via
+
+Execution via a Slurm batch script:
+1. Do steps 1. to 4. of the above manually or with your favourite
+workflow management system.
+2. Submit the heavy computation via job definition script `mpijob_v1.sh`
 ```sh
 sbatch mpijob_v1.sh
 ```
+Inside the script the environment is activated and the application is run.
 
 #### Variant 2
 conda environment contains different MPI implementation than host. (negative test)
